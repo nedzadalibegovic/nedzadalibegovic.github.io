@@ -129,7 +129,13 @@
         }
 
         body {
-            -webkit-text-size-adjust: none
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
         }
 
         mark {
@@ -176,7 +182,11 @@
         }
 
         em {
-            font-style: italic;
+            color: #00ff80;
+        }
+
+        em:hover {
+            color: #ffffff;
         }
 
         code {
@@ -544,7 +554,7 @@
         }
 
         #icons01 .n01:hover svg {
-            fill: #99F9FF;
+            fill: #00ff80;
         }
 
         #icons01 .n02 svg {
@@ -552,7 +562,7 @@
         }
 
         #icons01 .n02:hover svg {
-            fill: #99F9FF;
+            fill: #00ff80;
         }
 
         #icons01 .n03 svg {
@@ -560,7 +570,7 @@
         }
 
         #icons01 .n03:hover svg {
-            fill: #99F9FF;
+            fill: #00ff80;
         }
 
         @media (max-width: 1680px) {
