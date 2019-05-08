@@ -192,10 +192,5 @@ if (!client.canUse("object-fit")) {
         c.style["backgroundSize"] = "cover";
         c.style["backgroundPosition"] = x.dataset.position;
         c.style["backgroundRepeat"] = "no-repeat";
-        c.src =
-            "data:image/svg+xml;charset=utf8," +
-            escape(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1"></svg>'
-            );
     }
 }
