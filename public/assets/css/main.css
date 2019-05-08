@@ -297,16 +297,16 @@ p {
         font-size: 3em;
     }
 
-    #columns01 {
+    #column {
         margin-top: 0.75rem !important;
         margin-bottom: 0.75rem !important;
     }
 
-    #columns01 > .inner {
+    #column > .inner {
         padding: 0rem 0rem;
     }
 
-    #columns01 > .inner > * {
+    #column > .inner > * {
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
     }
@@ -318,7 +318,7 @@ p {
         margin-bottom: 1.3125rem;
     }
 
-    #columns01 > .inner > * {
+    #column > .inner > * {
         margin-top: 0.65625rem;
         margin-bottom: 0.65625rem;
     }
@@ -352,21 +352,21 @@ p {
         margin-left: calc(-1.5rem);
     }
 
-    #columns01 > .inner {
+    #column > .inner {
         padding: 0rem 0rem;
     }
 
-    #columns01 > .inner > * {
+    #column > .inner > * {
         margin-top: 0.5625rem;
         margin-bottom: 0.5625rem;
     }
 
-    #icons01 {
+    #icons {
         width: calc(100% + 0.9375rem);
         margin-left: -0.46875rem;
     }
 
-    #icons01 li {
+    #icons li {
         margin: 0.46875rem;
     }
 }
