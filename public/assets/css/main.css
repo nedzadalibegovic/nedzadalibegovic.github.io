@@ -187,28 +187,28 @@
             border-radius: inherit;
         }
 
-        #columns01 {
+        #column {
             margin-top: 1.313rem !important;
             margin-bottom: 1.313rem !important;
         }
 
-        #columns01 > .inner {
+        #column > .inner {
             padding: 0rem 0rem;
             width: 40rem;
             background-color: transparent;
             display: inline-block;
         }
 
-        #columns01 > .inner > * {
+        #column > .inner > * {
             margin-top: 0.75rem;
             margin-bottom: 0.75rem;
         }
 
-        #columns01 > .inner > *:first-child {
+        #column > .inner > *:first-child {
             margin-top: 0 !important;
         }
 
-        #columns01 > .inner > *:last-child {
+        #column > .inner > *:last-child {
             margin-bottom: 0 !important;
         }
 
@@ -245,32 +245,16 @@
             display: none;
         }
 
-        #icons01 li a svg {
+        #icons li a svg {
             width: 100%;
             height: 100%;
         }
 
-        #icons01 .n01 svg {
+        #icons .icon-style svg {
             fill: #FFFFFF;
         }
 
-        #icons01 .n01:hover svg {
-            fill: #00ff80;
-        }
-
-        #icons01 .n02 svg {
-            fill: #FFFFFF;
-        }
-
-        #icons01 .n02:hover svg {
-            fill: #00ff80;
-        }
-
-        #icons01 .n03 svg {
-            fill: #FFFFFF;
-        }
-
-        #icons01 .n03:hover svg {
+        #icons .icon-style:hover svg {
             fill: #00ff80;
         }
 
