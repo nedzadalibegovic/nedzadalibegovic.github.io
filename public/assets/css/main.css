@@ -9,11 +9,6 @@
             vertical-align: baseline;
         }
 
-        input::-moz-focus-inner {
-            border: 0;
-            padding: 0
-        }
-
         *,
         *:before,
         *:after {
@@ -22,6 +17,7 @@
 
         body {
             user-select: none;
+            -moz-user-select: -moz-none;
             min-width: 320px;
             min-height: 100vh;
             line-height: 1.0;
