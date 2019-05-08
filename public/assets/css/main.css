@@ -9,16 +9,6 @@
             vertical-align: baseline;
         }
 
-        body {
-            -webkit-text-size-adjust: none;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
         input::-moz-focus-inner {
             border: 0;
             padding: 0
@@ -31,6 +21,7 @@
         }
 
         body {
+            user-select: none;
             min-width: 320px;
             min-height: 100vh;
             line-height: 1.0;
@@ -55,13 +46,7 @@
             width: 100vw;
             height: 100vh;
             z-index: 0;
-            -moz-pointer-events: none;
-            -webkit-pointer-events: none;
-            -ms-pointer-events: none;
             pointer-events: none;
-            -moz-transform: scale(1);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
             background-image: url('/assets/img/bg.min.jpg');
             background-position: top right;
@@ -83,13 +68,7 @@
             z-index: 1;
             opacity: 0;
             visibility: hidden;
-            -moz-transition: opacity 2.5s ease-in-out 0.5s, visibility 2.5s 0.5s;
-            -webkit-transition: opacity 2.5s ease-in-out 0.5s, visibility 2.5s 0.5s;
-            -ms-transition: opacity 2.5s ease-in-out 0.5s, visibility 2.5s 0.5s;
             transition: opacity 2.5s ease-in-out 0.5s, visibility 2.5s 0.5s;
-            -moz-transform: scale(1);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
         }
 
@@ -103,22 +82,9 @@
         }
 
         #wrapper {
-            -webkit-overflow-scrolling: touch;
-            display: -moz-flex;
-            display: -webkit-flex;
-            display: -ms-flex;
             display: flex;
-            -moz-flex-direction: column;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
             flex-direction: column;
-            -moz-align-items: flex-start;
-            -webkit-align-items: flex-start;
-            -ms-align-items: flex-start;
             align-items: flex-start;
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
             justify-content: center;
             min-height: 100vh;
             position: relative;
@@ -127,33 +93,15 @@
         }
 
         #main {
-            display: -moz-flex;
-            display: -webkit-flex;
-            display: -ms-flex;
             display: flex;
             position: relative;
             max-width: 100%;
             z-index: 1;
-            -moz-align-items: center;
-            -webkit-align-items: center;
-            -ms-align-items: center;
             align-items: center;
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
             justify-content: center;
-            -moz-flex-grow: 0;
-            -webkit-flex-grow: 0;
-            -ms-flex-grow: 0;
             flex-grow: 0;
-            -moz-flex-shrink: 0;
-            -webkit-flex-shrink: 0;
-            -ms-flex-shrink: 0;
             flex-shrink: 0;
             text-align: left;
-            -moz-transition: opacity 0.625s ease-in-out 0s;
-            -webkit-transition: opacity 0.625s ease-in-out 0s;
-            -ms-transition: opacity 0.625s ease-in-out 0s;
             transition: opacity 0.625s ease-in-out 0s;
         }
 
@@ -280,17 +228,8 @@
         }
 
         .icons li a {
-            display: -moz-flex;
-            display: -webkit-flex;
-            display: -ms-flex;
             display: flex;
-            -moz-align-items: center;
-            -webkit-align-items: center;
-            -ms-align-items: center;
             align-items: center;
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
             justify-content: center;
             border-radius: 100%;
             width: 1em;
@@ -299,9 +238,6 @@
 
         .icons li a svg {
             display: block;
-            -moz-transition: fill 0.25s ease;
-            -webkit-transition: fill 0.25s ease;
-            -ms-transition: fill 0.25s ease;
             transition: fill 0.25s ease;
         }
 
@@ -339,12 +275,6 @@
         }
 
         @media (max-width: 1680px) {
-            html {
-                font-size: 13pt;
-            }
-        }
-
-        @media (max-width: 1280px) {
             html {
                 font-size: 13pt;
             }
