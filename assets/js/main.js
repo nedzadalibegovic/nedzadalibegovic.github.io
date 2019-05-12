@@ -1,4 +1,8 @@
-var on = addEventListener,
+document.oncontextmenu = function() {
+    return false;
+};
+
+let on = addEventListener,
     $body = document.body;
 
 on("load", function() {
