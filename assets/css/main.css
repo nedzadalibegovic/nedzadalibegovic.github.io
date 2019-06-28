@@ -130,28 +130,6 @@ body.is-loading #main {
     opacity: 0;
 }
 
-h1 br + br,
-h2 br + br,
-h3 br + br,
-p br + br {
-    display: block;
-    content: " ";
-    margin-top: 0.825rem;
-}
-
-h1 .li,
-h2 .li,
-h3 .li,
-p .li {
-    display: list-item;
-    padding-left: 0.5em;
-    margin: 0.75em 0 0 1em;
-}
-
-#text01 br + br {
-    margin-top: 0.75rem;
-}
-
 #text01 {
     font-family: "Oswald", "sans-serif";
     line-height: 1.25;
@@ -325,24 +303,6 @@ p {
     #main > .inner > * {
         margin-top: 1.125rem;
         margin-bottom: 1.125rem;
-    }
-
-    #main > .inner > .full {
-        margin-left: calc(-1.5rem);
-        width: calc(100% + 3rem + 0.4725px);
-        max-width: calc(100% + 3rem + 0.4725px);
-    }
-
-    #main > .inner > .full:first-child {
-        margin-top: -2.625rem !important;
-    }
-
-    #main > .inner > .full:last-child {
-        margin-bottom: -2.625rem !important;
-    }
-
-    #main > .inner > .full.screen {
-        margin-left: calc(-1.5rem);
     }
 
     #column > .inner {
