@@ -33,6 +33,7 @@ em {
 }
 
 em:hover {
+    transition: color 0.25s ease;
     color: #ffffff;
 }
 
@@ -190,7 +191,6 @@ p {
 }
 
 .icons {
-    cursor: default;
     padding: 0;
     letter-spacing: 0;
     font-size: 1.7em;
@@ -224,6 +224,7 @@ p {
 }
 
 #icons .icon-style:hover {
+    transition: color 0.25s ease;
     color: #00ff80;
 }
 
