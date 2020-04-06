@@ -1,70 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <title>Nedžad Alibegović</title>
     <meta charset="utf-8" />
     <meta name="description" content="Some dude on the internet" />
     <meta name="author" content="Nedžad Alibegović" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-    <meta name="theme-color" content="#00ff80">
-    <meta property="og:site_name" content="Nedžad Alibegović" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00ff80" />
     <meta property="og:title" content="Nedžad Alibegović" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="assets/img/card.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/card.jpg" />
     <meta property="og:description" content="Some dude on the internet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"
-        integrity="sha256-xzrHBImM2jn9oDLORlHS1/0ekn1VyypEkV1ALvUx8lU=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-</head>
-
-<body class="is-loading">
-
+  <body class="is-loading">
     <div id="wrapper">
-        <div id="main">
+      <div id="main">
+        <div class="inner">
+          <div id="column" class="container">
             <div class="inner">
-                <div id="column" class="container">
-                    <div class="inner">
-                        <h1 id="text01">Nedžad Alibegović</h1>
-                        <p id="text02">Some dude on the internet<em>.</em></p>
-                    </div>
-                </div>
-                <ul id="icons" class="icons">
-                    <li>
-                        <a class="icon-style" href="https://github.com/nedzadalibegovic">
-                            <i class="fab fa-github"></i>
-                            <span class="label">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon-style" href="mailto:contact@nedzadalibegovic.com">
-                            <i class="fas fa-at"></i>
-                            <span class="label">Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon-style" href="/portfolio">
-                            <i class="fas fa-expand"></i>
-                            <span class="label">Portfolio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon-style" href="https://www.instagram.com/nedzad.alibegovic/">
-                            <i class="fab fa-instagram"></i>
-                            <span class="label">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
+              <h1 id="text01">Nedžad Alibegović</h1>
+              <p id="text02">Some dude on the internet<em>.</em></p>
             </div>
+          </div>
+          <ul id="icons" class="icons">
+            <li>
+              <a class="icon-style" href="https://github.com/nedzadalibegovic">
+                <i class="fab fa-github"></i>
+                <span class="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon-style" href="mailto:contact@nedzadalibegovic.com">
+                <i class="fas fa-at"></i>
+                <span class="label">Email</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon-style" href="/portfolio">
+                <i class="fas fa-expand"></i>
+                <span class="label">Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon-style"
+                href="https://www.instagram.com/nedzad.alibegovic/"
+              >
+                <i class="fab fa-instagram"></i>
+                <span class="label">Instagram</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script>
+      "use strict";
 
-</body>
+      addEventListener("load", function () {
+        setTimeout(function () {
+          document.body.className = document.body.className.replace(
+            "is-loading",
+            "is-playing"
+          );
 
+          setTimeout(function () {
+            document.body.className = document.body.className.replace(
+              "is-playing",
+              "is-ready"
+            );
+          }, 3000);
+        }, 100);
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/d0e7efd0fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
